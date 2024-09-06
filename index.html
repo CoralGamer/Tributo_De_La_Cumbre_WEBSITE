@@ -6,50 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/6e442b1f94.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="multimedia/favicon.png" type="image/x-icon">
     <script type='text/javascript'>
+        document.onselectstart = function(){return false}
         document.oncontextmenu = function(){return false}
     </script>
     <title>TRIBUTO DE LA CUMBRE - INICIO</title>
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <header class="container-fluid">
+    <header class="container">
         <div class="row">
-            <div class="container">
-                <div class="row contenedor_h">
-                    <div class="col-4">
-                        <div class="row web_L">
-                            <div class="col-2">
-                                <img src="multimedia/Logo.png" height="95px" alt="">
-                            </div>
+            <div class="col-12">
+                    <div class="row contenedor_h d-flex justify-content-center">
+                        <div class="col-2 d-flex justify-content-center h_images">
+                            <img src="multimedia/Logo.png" height="95px" alt="" class="animate__animated animate__fadeIn">
+                        </div>
+                        <div class="col-8 Botones">
+                            <a href="#" class="animate__animated animate__backInDown">INICIO</a>
+                            <a href="#" class="animate__animated animate__backInDown">ACTIVIDADES</a>
+                            <a href="#" class="animate__animated animate__backInDown">GASTRONOMIA</a>
+                            <a href="#" class="animate__animated animate__backInDown">ALOJAMIENTO</a>
+                            <a href="#" class="animate__animated animate__backInDown">NOVEDADES</a>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center h_images">
+                            <img src="multimedia/tausa.png" height="95px" alt="" class="animate__animated animate__fadeIn">
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="row">
-                            <div class="col-12 Botones">
-                                <a href="#">INICIO</a>
-                                <a href="#">ACTIVIDADES</a>
-                                <a href="#">GASTRONOMIA</a>
-                                <a href="#">ALOJAMIENTO</a>
-                                <a href="#">NOVEDADES</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="row tausa_L">
-                            <div class="col-2">
-                                <img src="multimedia/tausa.png" height="95px" alt="">
+            </div>
+        </div>
+    </header>
+    <section class="seccion1">
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center TituloH1">
+                            <cite>~ Tributo de la Cumbre</cite>
+                            <h1>No hay un lugar tan magico, como lo es Tausa, Cundinamarca.</h1>
+                            <p>Donde el tiempo se detiene y la naturaleza cuenta historias. En cada colina y en la calma de la Laguna Verde, se percibe un aura mística que cautiva. Las ruinas de su iglesia colonial y las minas de sal revelan secretos de un pasado envuelto en misterio, mientras el páramo guarda la esencia de lo sagrado. Tausa es un destino que invita a explorar lo desconocido y a conectarse con lo extraordinario.</p>
+                            <div class="row align-items-center s1_row1 animate__animated animate__pulse animate__delay-2s animate__slow animate__infinite">
+                                <div class="col-2"><i class="fa-solid fa-angles-down"></i></div>
+                                <div class="col-8"><button type="button" class="btn btn-light" href="#">DESCUBRE</button></div>
+                                <div class="col-2"><i class="fa-solid fa-angles-down"></i></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    <section class="seccion1">
-        <img src="multimedia/header_IMG_section_1.png" width="100%" height="600px" alt="">
+        <img src="multimedia/header_IMG_section_1.png" width="100%" height="750px" alt="">
+    </section>
+    <section class="seccion2">
+        <img src="multimedia/franja.png" width="100%" height="200px" alt="" style="z-index: -2; margin-top: -20px;">
+    </section>
+    <!--
+    <section class="seccion3">
+        <div class="container">
+            <div class="row actividades">
+                <div class="col-3 activity">
+                    <div class="row">
+                        <div class="col-12"><img src="" alt=""></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h3></h3>
+                            <p></p>
+                            <button type="button" class="btn btn-success">Success</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="multimedia/secction3.jpg" alt=""> -->
     </section>
 </body>
 </html>
