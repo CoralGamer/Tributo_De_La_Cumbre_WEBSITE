@@ -57,9 +57,9 @@ header{
     position: absolute;
 }
 .TituloH1 p{
-    width: 38%;
-    font-weight: 600;
-    font-size: 15px;
+    width: 45%;
+    font-weight: 500;
+    font-size: 18px;
     text-align: center;
     font-family: "Mynerve", cursive;
     position: absolute;
@@ -87,4 +87,79 @@ header{
     font-size: 25px;
     color: #01191C;
     padding: 0px 100px;
+}
+.s3_pic{
+    width: 370px;
+    height: 310px;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    -o-object-position: center;
+    border-radius: 25px 25px 0px 0px;
+}
+.s3_desc h2{
+    font-family: "Roboto", sans-serif;
+    color: #03525c;
+    font-weight: 800;
+    font-size: 45px;
+    width: 35%;
+    padding: 20px;
+}
+.s3_desc p{
+    font-family: "Mynerve", cursive;
+    color: #01191C;
+    font-size: 20px;
+}
+.c_activities{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.actividades{
+    margin-left: -12%;
+    flex-wrap: nowrap;
+    width: fit-content;
+}
+.activity{
+    padding: 0px;
+    margin: 0px 18px 0px 18px;
+    width: 370px;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 0px 40px -13px rgba(0,0,0,0.37);
+    -moz-box-shadow: 0px 0px 40px -13px rgba(0,0,0,0.37);
+    box-shadow: 0px 0px 40px -13px rgba(0,0,0,0.37);
+}
+.activity_cont h3{
+    font-size: 38px;
+    text-justify: inter-word;
+}
+.activity_rate{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+    align-items: center;
+}
+.activity_rate span{
+    width: fit-content;
+    font-size: 16px;
+    padding-left: 11px;
+    color: orange;
+}
+.activity_rate cite{
+    width: fit-content;
+    font-size: 12px;
+    padding: 0px;
+}
+.activity_rate a{
+    cursor: help;
+    width: fit-content;
+    font-size: 12px;
+    padding: 0px 0px 0px 5px;
+}
+.activity_cont p{
+    font-family: "Roboto", sans-serif;
+    margin-top: 15px;
+    text-align: justify;
+    text-justify: inter-word;
 }

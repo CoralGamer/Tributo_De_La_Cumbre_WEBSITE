@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/6e442b1f94.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="multimedia/favicon.png" type="image/x-icon">
     <script type='text/javascript'>
@@ -15,8 +17,7 @@
     </script>
     <title>TRIBUTO DE LA CUMBRE - INICIO</title>
 </head>
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<body class="tooltip-demo">
     <header class="container">
         <div class="row">
             <div class="col-12">
@@ -25,8 +26,8 @@
                             <img src="multimedia/Logo.png" height="95px" alt="" class="animate__animated animate__fadeIn">
                         </div>
                         <div class="col-8 Botones">
-                            <a href="#" class="animate__animated animate__backInDown">INICIO</a>
-                            <a href="#" class="animate__animated animate__backInDown">ACTIVIDADES</a>
+                            <a href="#start_s" class="animate__animated animate__backInDown">INICIO</a>
+                            <a href="#activities_s" class="animate__animated animate__backInDown">ACTIVIDADES</a>
                             <a href="#" class="animate__animated animate__backInDown">GASTRONOMIA</a>
                             <a href="#" class="animate__animated animate__backInDown">ALOJAMIENTO</a>
                             <a href="#" class="animate__animated animate__backInDown">NOVEDADES</a>
@@ -41,15 +42,15 @@
     <section class="seccion1">
         <div class="row">
             <div class="col-12">
-                <div class="container">
+                <div class="container" id="start_s">
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center TituloH1">
                             <cite>~ Tributo de la Cumbre</cite>
                             <h1>No hay un lugar tan magico, como lo es Tausa, Cundinamarca.</h1>
-                            <p>Donde el tiempo se detiene y la naturaleza cuenta historias. En cada colina y en la calma de la Laguna Verde, se percibe un aura mística que cautiva. Las ruinas de su iglesia colonial y las minas de sal revelan secretos de un pasado envuelto en misterio, mientras el páramo guarda la esencia de lo sagrado. Tausa es un destino que invita a explorar lo desconocido y a conectarse con lo extraordinario.</p>
+                            <p>Donde el tiempo se detiene y la naturaleza cuenta historias. En cada colina y en la calma de la Laguna Verde, se percibe un aura mística que cautiva. Las ruinas de su iglesia colonial y las minas de sal revelan secretos de un pasado envuelto en misterio, mientras el páramo guarda la esencia de lo sagrado.</p>
                             <div class="row align-items-center s1_row1 animate__animated animate__pulse animate__delay-2s animate__slow animate__infinite">
                                 <div class="col-2"><i class="fa-solid fa-angles-down"></i></div>
-                                <div class="col-8"><button type="button" class="btn btn-light" href="#">DESCUBRE</button></div>
+                                <div class="col-8"><button type="button" class="btn btn-light">DESCUBRE</button></div>
                                 <div class="col-2"><i class="fa-solid fa-angles-down"></i></div>
                             </div>
                         </div>
@@ -57,31 +58,106 @@
                 </div>
             </div>
         </div>
-        <img src="multimedia/header_IMG_section_1.png" width="100%" height="750px" alt="">
+        <img src="multimedia/header_IMG_section_1.webp" width="100%" height="750px" alt="">
     </section>
     <section class="seccion2">
         <img src="multimedia/franja.png" width="100%" height="200px" alt="" style="z-index: -2; margin-top: -20px;">
     </section>
-    <!--
     <section class="seccion3">
-        <div class="container">
-            <div class="row actividades">
+        <div class="container c_activities">
+            <div class="row d-flex justify-content-center" id="activities_s">
+                <div class="col-12 d-flex justify-content-center align-items-center mt-5 mb-2 s3_desc">
+                    <h2>¿Qué se puede hacer en Tausa?</h2>
+                    <p>Conoce algunas de las actividades que se pueden realizar en Tausa, Cundinamarca; Y vive una experiencia magica en cada una de ellas.</p>
+                </div>
+                <hr style="width: 50%;">
+            </div>
+            <div class="row actividades mt-4 mb-5">
                 <div class="col-3 activity">
                     <div class="row">
-                        <div class="col-12"><img src="" alt=""></div>
+                        <div class="col-12"><img src="multimedia/actividades/lagunaverde.jpg" alt="Contenido" class="s3_pic"></div>
                     </div>
                     <div class="row">
-                        <div class="col-12">
-                            <h3></h3>
-                            <p></p>
-                            <button type="button" class="btn btn-success">Success</button>
+                        <div class="col-12 p-5 activity_cont">
+                            <h3>Laguna Verde</h3>
+                            <div class="row activity_rate">
+                                <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                <cite>5.0 (31)</cite>
+                                <a href="https://www.google.com/maps/place/Laguna+Verde/@5.2152777,-73.9991667,5503m/data=!3m1!1e3!4m8!3m7!1s0x8e4042ef6b931f39:0x7f9f6ce78fb5dd4d!8m2!3d5.2152778!4d-73.9991667!9m1!1b1!16s%2Fg%2F11byl4h0ys?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" title="Esta informacion esta actualizada desde el 9/09/2024 usando Google Maps"><i class="fa-regular fa-circle-question"></i></a>
+                            </div>
+                            <span class="d-flex align-items-center"></span>
+                            <p>Un lugar mágico en medio de las montañas, ideal para caminatas cortas, conectarte con la naturaleza y disfrutar de hermosos paisajes.</p>
+                            <button type="button" class="btn btn-success" href="">VER MÁS</button>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-3 activity">
+                    <div class="row">
+                        <div class="col-12"><img src="multimedia/actividades/cerroelsantuario.jpg" alt="Contenido" class="s3_pic"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 p-5 activity_cont">
+                            <h3>Cerro El Santuario</h3>
+                            <div class="row activity_rate">
+                                <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                                <cite>4.7 (19)</cite>
+                                <a href="https://www.google.com/maps/place/Cerro+El+Santuario/@5.195707,-74.0515839,1377m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8e405d97f5fb8de9:0xa68f23b9023db9fb!8m2!3d5.1957017!4d-74.049009!16s%2Fg%2F11h2hlc8cx?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" title="Esta informacion esta actualizada desde el 9/09/2024 usando Google Maps"><i class="fa-regular fa-circle-question"></i></a>
+                            </div>
+                            <span class="d-flex align-items-center"></span>
+                            <p>Realiza una caminata hasta la cima de este cerro, desde donde puedes tener vistas espectaculares de Tausa y sus alrededores.</p>
+                            <button type="button" class="btn btn-success" href="">VER MÁS</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 activity">
+                    <div class="row">
+                        <div class="col-12"><img src="multimedia/actividades/iglesiaenruinas.jpg" alt="Contenido" class="s3_pic"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 p-5 activity_cont">
+                            <h3>Templo Doctrinero Tausa</h3>
+                            <div class="row activity_rate">
+                                <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                <cite>5.0 (5)</cite>
+                                <a href="https://www.google.com/maps/place/Templo+Doctrinero+Tausa+Antiguo/@5.1954337,-73.8924133,358m/data=!3m1!1e3!4m14!1m7!3m6!1s0x8e405d97f5fb8de9:0xa68f23b9023db9fb!2sCerro+El+Santuario!8m2!3d5.1957017!4d-74.049009!16s%2Fg%2F11h2hlc8cx!3m5!1s0x8e404148dda9ecb3:0x42b77f7a62ffdbc!8m2!3d5.1951953!4d-73.8931468!16s%2Fg%2F11hdjg4qmx?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" title="Esta informacion esta actualizada desde el 9/09/2024 usando Google Maps"><i class="fa-regular fa-circle-question"></i></a>
+                            </div>
+                            <span class="d-flex align-items-center"></span>
+                            <p>Explora las ruinas de una antigua iglesia que data del siglo XVII, un sitio lleno de historia y cultura local.</p>
+                            <button type="button" class="btn btn-success" href="">VER MÁS</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 activity">
+                    <div class="row">
+                        <div class="col-12"><img src="multimedia/actividades/Neusa.jpeg" alt="Contenido" class="s3_pic"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 p-5 activity_cont">
+                            <h3>Embalse de Neusa</h3>
+                            <div class="row activity_rate">
+                                <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                                <cite>4.5 (70)</cite>
+                                <a href="https://www.google.com/maps/place/EMBALSE+DE+NEUSA/@5.1570348,-73.9547979,7715m/data=!3m1!1e3!4m14!1m7!3m6!1s0x8e405d97f5fb8de9:0xa68f23b9023db9fb!2sCerro+El+Santuario!8m2!3d5.1957017!4d-74.049009!16s%2Fg%2F11h2hlc8cx!3m5!1s0x8e4069edc755332f:0xe6b69ec52a17f774!8m2!3d5.1685075!4d-73.9495754!16s%2Fg%2F1yg57w8kt?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" title="Esta informacion esta actualizada desde el 9/09/2024 usando Google Maps"><i class="fa-regular fa-circle-question"></i></a>
+                            </div>
+                            <span class="d-flex align-items-center"></span>
+                            <p>Cerca de Tausa, este embalse es perfecto para camping, pesca y caminatas, rodeado de montañas y naturaleza, ofreciendo un espacio ideal para relajarse y disfrutar del aire libre.</p>
+                            <button type="button" class="btn btn-success" href="">VER MÁS</button>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
-        <img src="multimedia/secction3.jpg" alt=""> -->
     </section>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerE1) {
+        return new bootstrap.Tooltip(tooltipTriggerE1)
+        })
+    </script>
 </body>
 </html>
 
