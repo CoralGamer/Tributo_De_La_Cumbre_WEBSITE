@@ -104,6 +104,7 @@ header{
     font-size: 45px;
     width: 35%;
     padding: 20px;
+    text-align: center;
 }
 .s3_desc p{
     font-family: "Mynerve", cursive;
@@ -162,4 +163,7 @@ header{
     margin-top: 15px;
     text-align: justify;
     text-justify: inter-word;
+}
+.route{
+    width: 100%;
 }
